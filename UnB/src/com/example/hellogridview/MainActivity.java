@@ -4,12 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.GridView;
-import android.widget.Toast;
+import android.view.View.OnClickListener;
 
-public class MainActivity extends Activity
+public class MainActivity extends Activity implements OnClickListener
 {
 
     @Override
@@ -18,23 +15,25 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        GridView gridview = (GridView) findViewById(R.id.gridview);
-        gridview.setAdapter(new ImageAdapter(this));
-        
-        gridview.setOnItemClickListener(new OnItemClickListener()
-        {
-        	public void onItemClick(AdapterView<?> parent, View v, int position, long id)
-        	{
-        		//View maps = new View(MainActivity.this);
-				Toast.makeText(MainActivity.this, "lalalala", Toast.LENGTH_SHORT).show();
-        		//openMaps(maps);
-        	}
-       	});
+        View mapsButton = findViewById(R.id.maps_button);
+        mapsButton.setOnClickListener(this);
     }
     
     public void openMaps(View view)
     {
-    	Intent intent = new Intent (this, Maps.class);
+    	Intent intent = new Intent(this, Maps.class);
     	startActivity(intent);
     }
+
+	public void onClick(View v)
+	{
+		switch (v.getId())
+		{
+		case R.id.maps_button:
+			Intent i = new Intent(this, Maps.class);
+			startActivity(i);
+			break;
+			// More buttons go here (if any) ...
+		}
+	}
 }

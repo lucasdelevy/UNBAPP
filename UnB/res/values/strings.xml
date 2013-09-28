@@ -3,6 +3,7 @@
 
     <string name="app_name">UnB</string>
     <string name="action_settings">Settings</string>
-    <string name="maps_icon">mapa</string>
+    <string name="maps_text">mapa</string>
+    <string name="bg_main">background</string>
 
 </resources>
