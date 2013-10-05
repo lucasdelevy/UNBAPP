@@ -8,11 +8,12 @@
     android:orientation="horizontal"
     android:isScrollContainer="true" >
     
-	<ImageView
+	<com.example.hellogridview.ImageViewZoom
+	    android:id="@+id/unbmap"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:scaleType="centerCrop"
-	    android:contentDescription="unbmap"
+	    android:contentDescription="@string/unbmap"
 	 	android:src="@drawable/unb_map" />
  
 </FrameLayout>

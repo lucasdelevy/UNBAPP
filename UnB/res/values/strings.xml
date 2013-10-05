@@ -8,5 +8,6 @@
     <string name="maps_activity">Mapa</string>
     <string name="events_activity">Eventos</string>
     <string name="calendar_activity">Calendário</string>
+    <string name="unbmap">Mapa da UnB</string>
 
 </resources>
