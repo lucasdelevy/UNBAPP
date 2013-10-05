@@ -3,7 +3,10 @@
 
     <string name="app_name">UnB</string>
     <string name="action_settings">Settings</string>
-    <string name="maps_text">mapa</string>
+    <string name="maps_text">Mapa</string>
     <string name="bg_main">background</string>
+    <string name="maps_activity">Mapa</string>
+    <string name="events_activity">Eventos</string>
+    <string name="calendar_activity">Calendário</string>
 
 </resources>
