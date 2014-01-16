@@ -17,6 +17,9 @@ public class MainActivity extends Activity implements OnClickListener
         
         View mapsButton = findViewById(R.id.maps_button);
         mapsButton.setOnClickListener(this);
+        
+        View eventsButton = findViewById(R.id.events_button);
+        eventsButton.setOnClickListener(this);
     }
     
     public void openMaps(View view)
@@ -27,13 +30,19 @@ public class MainActivity extends Activity implements OnClickListener
 
 	public void onClick(View v)
 	{
+		Intent i;
+		
 		switch (v.getId())
 		{
 		case R.id.maps_button:
-			Intent i = new Intent(this, Maps.class);
+			i = new Intent(this, Maps.class);
 			startActivity(i);
 			break;
-			// More buttons go here (if any) ...
+		case R.id.events_button:
+			i = new Intent(this, Events.class);
+			startActivity(i);
+			break;
+		// More buttons go here (if any) ...
 		}
 	}
 }

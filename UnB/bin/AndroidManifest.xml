@@ -26,6 +26,10 @@
             android:name=".Maps"
             android:label="Maps activity" >
         </activity>
+        <activity
+            android:name=".Events"
+            android:label="Events activity" >
+        </activity>
     </application>
 
 </manifest>
