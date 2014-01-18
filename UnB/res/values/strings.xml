@@ -3,11 +3,15 @@
 
     <string name="app_name">UnB</string>
     <string name="action_settings">Settings</string>
-    <string name="maps_text">Mapa</string>
     <string name="bg_main">background</string>
     <string name="maps_activity">Mapa</string>
     <string name="events_activity">Eventos</string>
     <string name="calendar_activity">Calendário</string>
     <string name="unbmap">Mapa da UnB</string>
+    <string name="emergency_activity">Números de Emergência</string>
+    <string name="unb_address">Campus Universitário Darcy Ribeiro\nBrasília – DF, Brasil\nCEP 70910–900</string>
+    <string name="unb">Universidade de Brasília (UnB)</string>
+    <color name="unb_green_color">#007D39</color>
+    <color name="unb_blue_color">#233F6A</color>
 
 </resources>

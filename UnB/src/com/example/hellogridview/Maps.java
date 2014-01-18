@@ -12,6 +12,8 @@ public class Maps extends Activity {
 	{
 		super.onCreate(null);
 		
+		setTitle(R.string.maps_activity);
+		
 		// Create image view with zoom
 		ImageViewZoom touch = new ImageViewZoom(this);
 		

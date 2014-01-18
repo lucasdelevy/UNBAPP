@@ -8,6 +8,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -29,6 +31,10 @@
         <activity
             android:name=".Events"
             android:label="Events activity" >
+        </activity>
+        <activity
+            android:name=".Emergency"
+            android:label="Emergency activity" >
         </activity>
     </application>
 

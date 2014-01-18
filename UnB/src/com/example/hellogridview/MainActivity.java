@@ -20,6 +20,9 @@ public class MainActivity extends Activity implements OnClickListener
         
         View eventsButton = findViewById(R.id.events_button);
         eventsButton.setOnClickListener(this);
+        
+        View emergencyButton = findViewById(R.id.emergency_button);
+        emergencyButton.setOnClickListener(this);
     }
     
     public void openMaps(View view)
@@ -40,6 +43,10 @@ public class MainActivity extends Activity implements OnClickListener
 			break;
 		case R.id.events_button:
 			i = new Intent(this, Events.class);
+			startActivity(i);
+			break;
+		case R.id.emergency_button:
+			i = new Intent(this, Emergency.class);
 			startActivity(i);
 			break;
 		// More buttons go here (if any) ...
