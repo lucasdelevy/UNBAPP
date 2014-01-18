@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/emergency_unb_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:gravity="center"
+        android:text="@string/unb"
+        android:textColor="@color/unb_blue_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/emergency_unb_address_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:text="@string/unb_address"
+        android:textColor="@color/unb_green_color"
+        android:textIsSelectable="true"
+        android:textStyle="italic" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/unb_blue_color" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/unb_green_color" />
+    
+    <ListView
+        android:id="@+id/emergency_contacts_list"
+        android:layout_width="match_parent"
+        android:layout_height="319dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.95"
+        android:paddingBottom="20dp"
+        android:paddingTop="0dp" >
+
+    </ListView>
+
+</LinearLayout>
