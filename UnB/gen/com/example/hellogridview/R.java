@@ -35,26 +35,31 @@ public final class R {
         public static final int unb_map=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000c;
+        public static final int action_settings=0x7f090010;
         public static final int emergency_button=0x7f090004;
         public static final int emergency_contacts_list=0x7f090007;
-        public static final int emergency_subtitle_id=0x7f090009;
-        public static final int emergency_title_id=0x7f090008;
+        public static final int emergency_subtitle_id=0x7f09000d;
+        public static final int emergency_title_id=0x7f09000c;
         public static final int emergency_unb_address_id=0x7f090006;
         public static final int emergency_unb_id=0x7f090005;
+        public static final int event_image_id=0x7f090009;
+        public static final int event_subtitle_id=0x7f09000b;
+        public static final int event_title_id=0x7f09000a;
         public static final int events_button=0x7f090003;
+        public static final int events_contacts_list=0x7f090008;
         public static final int main_background=0x7f090000;
-        public static final int maps=0x7f09000a;
+        public static final int maps=0x7f09000e;
         public static final int maps_button=0x7f090001;
         public static final int schedule_button=0x7f090002;
-        public static final int unbmap=0x7f09000b;
+        public static final int unbmap=0x7f09000f;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int emergency=0x7f030001;
         public static final int events=0x7f030002;
-        public static final int item_view=0x7f030003;
-        public static final int maps=0x7f030004;
+        public static final int events_item=0x7f030003;
+        public static final int item_view=0x7f030004;
+        public static final int maps=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f080000;

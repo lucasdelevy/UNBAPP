@@ -13,7 +13,7 @@
         android:layout_marginTop="15dp"
         android:text="TextView"
         android:textColor="@color/unb_blue_color"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/emergency_subtitle_id"
@@ -23,7 +23,7 @@
         android:layout_below="@+id/emergency_title_id"
         android:text="TextView"
         android:textColor="@color/unb_green_color"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="italic" />
 
 </RelativeLayout>
