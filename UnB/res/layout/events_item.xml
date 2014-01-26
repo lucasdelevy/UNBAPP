@@ -7,7 +7,8 @@
     <ImageView
         android:id="@+id/event_image_id"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="4dp"
         android:src="@drawable/ic_events" />
     
 	<RelativeLayout
@@ -15,7 +16,7 @@
 	    android:layout_height="wrap_content" >
 	
 	    <TextView
-	        android:id="@+id/event_title_id"
+	        android:id="@+id/event_name_id"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignParentLeft="true"
@@ -27,11 +28,22 @@
 	        android:textSize="20sp" />
 	
 	    <TextView
-	        android:id="@+id/event_subtitle_id"
+	        android:id="@+id/event_date_id"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_alignLeft="@+id/event_title_id"
-	        android:layout_below="@+id/event_title_id"
+	        android:layout_alignLeft="@+id/event_name_id"
+	        android:layout_below="@+id/event_name_id"
+	        android:text="TextView"
+	        android:textColor="@color/unb_green_color"
+	        android:textSize="15sp"
+	        android:textStyle="italic" />
+	    
+	    <TextView
+	        android:id="@+id/event_location_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/event_date_id"
+	        android:layout_below="@+id/event_date_id"
 	        android:text="TextView"
 	        android:textColor="@color/unb_green_color"
 	        android:textSize="15sp"

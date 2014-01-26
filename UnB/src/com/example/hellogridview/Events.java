@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.ListActivity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -17,13 +20,13 @@ public class Events extends ListActivity {
 		private String name;
 		private EventType type;
 		private String location;
-		private String hour;
+		private String date;
 		
-		public Event(String name, EventType type, String location, String hour) {
+		public Event(String name, EventType type, String location, String date) {
 			this.name = name;
 			this.type = type;
 			this.location = location;
-			this.hour = hour;
+			this.date = date;
 		}
 		
 		public String getName() {
@@ -38,8 +41,8 @@ public class Events extends ListActivity {
 			return location;
 		}
 		
-		public String getHour() {
-			return hour;
+		public String getDate() {
+			return date;
 		}
 	}
 	
@@ -65,10 +68,10 @@ public class Events extends ListActivity {
 			"Ceubinho"
 	};
 	
-	String[] hours = new String[] {
-			"18:00",
-			"20:00",
-			"12:00"
+	String[] dates = new String[] {
+			"29/02 - 18:00",
+			"30/02 - 20:00",
+			"31/02 - 12:00"
 	};
 	
 	final int NUM_OF_EVENTS = events.length;
@@ -89,7 +92,7 @@ public class Events extends ListActivity {
 	
 	private void populateEventList() {
 		for(int i = 0; i < NUM_OF_EVENTS; i++) {
-			myEvents.add(new Event(events[i], types[i], locations[i], hours[i]));
+			myEvents.add(new Event(events[i], types[i], locations[i], dates[i]));
 		}
 	}
 		
@@ -115,11 +118,21 @@ public class Events extends ListActivity {
 			Event currentEvent = myEvents.get(position);
 			
 			// Fill the View
-			TextView title = (TextView) itemView.findViewById(R.id.event_title_id);
+			TextView title = (TextView) itemView.findViewById(R.id.event_name_id);
 			title.setText(currentEvent.getName());
 
-			TextView subtitle = (TextView) itemView.findViewById(R.id.event_subtitle_id);
-			subtitle.setText(currentEvent.getLocation());
+			TextView date = (TextView) itemView.findViewById(R.id.event_date_id);
+			date.setText(currentEvent.getDate());
+			
+			TextView location = (TextView) itemView.findViewById(R.id.event_location_id);
+			location.setText(currentEvent.getLocation());
+			
+			if (currentEvent.getType() == EventType.FORMATURA) {
+				View imageView = itemView.findViewById(R.id.event_image_id);
+				ImageView image = (ImageView) imageView;
+				Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.event_graduation);
+				image.setImageBitmap(bm);
+			}
 			
 			return itemView;
 		}	
