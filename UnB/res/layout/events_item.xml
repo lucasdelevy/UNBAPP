@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:paddingLeft="4dp"
-        android:src="@drawable/ic_events" />
+        android:src="@drawable/ic_events_new" />
     
 	<RelativeLayout
 	    android:layout_width="wrap_content"
