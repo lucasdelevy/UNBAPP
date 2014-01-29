@@ -65,12 +65,12 @@ public class Events extends ListActivity {
 		setTitle(R.string.events_activity);
 	    setContentView(R.layout.events);
 	    
-	    getEventsFromXml();			// Fill myEvents
+	    populateEventsFromXml();	// Fill myEvents
 	    populateListView();			// Fill the XML
 	    //registerClickCallback();	// Create listener
 	}
 	
-	private void getEventsFromXml() {
+	private void populateEventsFromXml() {
 		Resources res = getResources();
 		String[] eventList = res.getStringArray(R.array.event_list);
 		String[] eventDetails;
